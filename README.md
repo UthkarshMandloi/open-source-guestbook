@@ -1,5 +1,13 @@
 # 🚀 Open Source Guestbook Board
 
+```text
+ ██████  ██████  ███████ ███    ██      ██████  ██    ██ ███████ ███████ ████████ ██████   ██████   ██████  ██   ██ 
+██    ██ ██   ██ ██      ████   ██     ██       ██    ██ ██      ██         ██    ██   ██ ██    ██ ██    ██ ██  ██  
+██    ██ ██████  █████   ██ ██  ██     ██   ███ ██    ██ █████   ███████    ██    ██████  ██    ██ ██    ██ █████   
+██    ██ ██      ██      ██  ██ ██     ██    ██ ██    ██ ██           ██    ██    ██   ██ ██    ██ ██    ██ ██  ██  
+ ██████  ██      ███████ ██   ████      ██████   ██████  ███████ ███████    ██    ██████   ██████   ██████  ██   ██ 
+```
+
 🔗 **Live Website**: [open-source-guestbook.vercel.app](https://open-source-guestbook.vercel.app/)
 
 Welcome! This repository is built specifically to teach you how the **Open Source Workflow** operates in the real world. 
@@ -16,7 +24,6 @@ To keep things organized and simulate a professional open-source environment, we
 
 **Step 1: Go to the Issues Tab**
 Navigate to the top of this repository and click on the **Issues** tab.
-
 ![Issues Tab](public/readme/issues.png)
 
 **Step 2: Select an Open Issue**
@@ -35,7 +42,6 @@ Maintainers need to know your plan! Scroll down to the comment box. Write a shor
 Do not start coding yet! Wait for a maintainer (@UthkarshMandloi) to review your proposal. Once approved, they will officially assign the issue to you. You will receive a notification, and your profile picture will appear on the right side of the issue.
 
 ![Assignee Section](public/readme/assigned-notifiaction1.png)
-
 ![Notification](public/readme/assigned-notifiaction2.png)
 
 ---
@@ -52,7 +58,6 @@ You cannot edit the original code directly. You need to create a personal copy o
 
 **Step 2: Get Your Clone Link**
 Go to your GitHub profile and open your newly forked repository. Click the green **Code** button and copy the HTTPS URL.
-
 ![Code Button](public/readme/code-button.png)
 
 **Step 3: Clone the Repository to Your System**
@@ -84,28 +89,55 @@ git checkout -b your-username/your-feature
 #### Part 2: How to Code, Push, and Create a Pull Request (PR)
 
 **Step 1: Code and Keep Updated**
-Now, open the code in your editor and build your card! (See [CONTRIBUTOR_GUIDE.md](CONTRIBUTOR_GUIDE.md) for the technical rules).
+Now, open the code in your editor and build your card! (See [CONTRIBUTING.md](CONTRIBUTING.md) for the technical rules).
 
 *Important Note*: If you are working for a few days, the original repository might change. Keep your branch updated by pulling from the upstream before you finish:
 ```bash
 git pull upstream dev
 ```
-Step 2: Commit and Push to Your Fork
-Once your card is ready, save your changes, commit them, and push them to your branch on GitHub:
 
-Bash
+**Step 2: Commit and Push to Your Fork**
+Once your card is ready, save your changes, commit them, and push them to your branch on GitHub:
+```bash
 git add .
 git commit -m "feat: added [Your Name] trading card"
 git push origin your-username/your-feature
+```
 
-Step 3: Create a Pull Request
+**Step 3: Create a Pull Request**
 Go back to the original repository (UthkarshMandloi/open-source-guestbook) on GitHub. You will see a green banner asking you to "Compare & pull request" your newly pushed branch. Click it!
-[Insert Screenshot: Highlight the green 'Compare & pull request' banner that appears on GitHub]
+![Compare and Pull Request](public/readme/compare-button.png)
 
-Step 4: Attach the Issue and Submit
-Give your PR a clear title. In the description box, you must link your PR to the issue you were assigned. Type Closes # followed by your issue number (e.g., Closes #5). This automatically links them together!
-[Insert Screenshot 1: Show typing 'Closes #...' and the dropdown menu showing the issue]
-[Insert Screenshot 2: Highlight the green 'Create pull request' button]
+**Step 4: Attach the Issue and Write PR Details**
+Give your PR a clear title. In the description box, you must link your PR to the issue you were assigned. Type `Closes #` followed by your issue number (e.g., `Closes #5`). This automatically links them together!
+![Close Tag Dropdown](public/readme/close-tag.png)
+![Pull Request Creator](public/readme/pull%20creater%20.png)
 
-🎉 That's it! Your contribution process is complete.
+**Step 5: Submit and Verify Linking**
+After completing your details, click the green **Create pull request** button to submit.
+![Link Notification](public/readme/link_notification.png)
+
+**Step 6: Review, Status Checks, and Merging**
+Once your PR is submitted, it undergoes automatic checks (like compiling the Next.js project and checking for TypeScript types). It also requires manual approval from a maintainer before it is merged:
+![Review and Merge Status](public/readme/pr-review-status.png)
+- **Review required / Merging is blocked**: This is completely normal! Pull requests require at least 1 approving review from the project maintainers with write access before they can be merged.
+- **All checks have passed**: This means your code built cleanly without any syntax errors. 
+
+---
+
+🎉 **That's it! Your contribution process is complete.**
 Wait for the maintainer to review your PR. If they request changes, make them locally, commit, and push again—the PR will update automatically. Once approved, your code will be merged and your card will go live on the site!
+
+---
+
+## 📖 Glossary for Learners
+
+To help you get comfortable with open source, here is a glossary of the terms used in this workflow:
+
+* **Fork**: A personal copy of another developer's project hosted on your own GitHub account. This allows you to make changes without affecting the original project.
+* **Clone**: Downloading your git repository files from GitHub to your local computer so you can edit the code in your IDE.
+* **Origin**: A default nickname for your personal, remote fork repository hosted on GitHub.
+* **Upstream**: The nickname given to the original repository from which you forked (i.e., the central project database where final pull requests are merged).
+* **Feature Branch**: A temporary branch created off the main code branch used to develop a single feature (like adding your card), preventing code contamination.
+* **Pull Request (PR)**: A submission request to merge your branch changes into the upstream repository for review.
+* **Merge Conflict**: When two developers make changes to the exact same lines of code in a file and merge them. Git gets confused about which change to keep, requiring you to manually select the correct code lines.

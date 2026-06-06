@@ -141,3 +141,24 @@ To help you get comfortable with open source, here is a glossary of the terms us
 * **Feature Branch**: A temporary branch created off the main code branch used to develop a single feature (like adding your card), preventing code contamination.
 * **Pull Request (PR)**: A submission request to merge your branch changes into the upstream repository for review.
 * **Merge Conflict**: When two developers make changes to the exact same lines of code in a file and merge them. Git gets confused about which change to keep, requiring you to manually select the correct code lines.
+
+---
+
+## 🐛 Bug Reports
+If you encounter any bugs, please create a bug report as an issue in the **Issues** tab.
+
+## 📬 Contact
+To reach out, DM me on LinkedIn: [Uthkarsh Mandloi](https://www.linkedin.com/in/uthkarsh-mandloi-257531328)
+
+---
+
+## 📄 License
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
+
+Built with 💙 as a flagship AI engineering project
+
+If you found this project helpful, please give it a ⭐ — it helps contributors discover it!
+
+FastAPI
+
+[⬆ Back to top](#-open-source-guestbook-board)

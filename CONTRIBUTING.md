@@ -135,8 +135,6 @@ service cloud.firestore {
 
 Below is the list of active developers whose cards and pages have been successfully merged into the whiteboard board!
 
-![Contributor Grid Screenshot](public/readme/contributor-table.png)
-
 <!-- Scrollable Contributor Container -->
 <div style="max-height: 280px; overflow-y: auto; border: 1px solid rgba(0,0,0,0.15); border-radius: 12px; padding: 12px;">
 

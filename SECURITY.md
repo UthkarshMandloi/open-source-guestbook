@@ -13,6 +13,6 @@ Only the latest version of the Open Source Guestbook is currently supported.
 We take the security of this project seriously. If you find a security vulnerability, please do **NOT** open a public issue on GitHub. 
 
 Instead, report vulnerabilities directly to the maintainer:
-- 📧 Email: **uthkarshmandloi@gmail.com** (or reach out via the contact form at [uthkarshmandloi.in](https://uthkarshmandloi.in))
+- 📧 Email: **uthkarshdhru20069@gmail.com** (or reach out via the contact form at [uthkarshmandloi.in](https://uthkarshmandloi.in))
 
 We will investigate and patch the issue as quickly as possible. Thank you for helping keep our playground safe!

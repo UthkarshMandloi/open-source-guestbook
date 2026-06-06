@@ -155,10 +155,7 @@ To reach out, DM me on LinkedIn: [Uthkarsh Mandloi](https://www.linkedin.com/in/
 ## 📄 License
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
-Built with 💙 as a flagship AI engineering project
-
-If you found this project helpful, please give it a ⭐ — it helps contributors discover it!
-
-FastAPI
+Built with 💙 to empower the next generation of student developers and tech enthusiasts.
+If you found this guide helpful for your learning journey, please give the repo a ⭐ — it helps our open-source community grow!
 
 [⬆ Back to top](#-open-source-guestbook-board)

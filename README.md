@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Open Source Guestbook Board
 
-## Getting Started
+🔗 **Live Website**: [open-source-guestbook.vercel.app](https://open-source-guestbook.vercel.app/)
 
-First, run the development server:
+Welcome! This repository is built specifically to teach you how the **Open Source Workflow** operates in the real world. 
 
+If you are a beginner looking to make your first pull request, you are in the right place! This repository hosts a live, collaborative developer board. By following the workflow below, you will practice contributing to a real project by designing your own developer "Trading Card" and getting it merged into the live website.
+
+---
+
+## 🗺️ Comprehensive Guide to Contributing
+
+To keep things organized and simulate a professional open-source environment, we follow a strict workflow. Do not just write code and submit it blindly, you must be assigned to an issue first!
+
+### Phase 1: How to Claim and Get Assigned an Issue
+
+**Step 1: Go to the Issues Tab**
+Navigate to the top of this repository and click on the **Issues** tab.
+
+![Issues Tab](public/readme/issues.png)
+
+**Step 2: Select an Open Issue**
+Browse the list of open issues. Look for ones tagged with `good first issue` (like adding your trading card to the board) and click on it.
+![Select Issue](public/readme/good1-st-Issue.png)
+
+**Step 3: Read the Instructions Carefully**
+Every issue has specific rules. Read the description thoroughly so you know exactly what is expected before you start coding.
+![Issue Description](public/readme/description.png)
+
+**Step 4: Submit Your Proposal**
+Maintainers need to know your plan! Scroll down to the comment box. Write a short proposal of what you intend to do (e.g., *"I want to build a dark-mode card with neon green borders"*), and leave a comment to claim the issue.
+![Comment Box](public/readme/comment-body.png)
+
+**Step 5: Wait to be Assigned**
+Do not start coding yet! Wait for a maintainer (@UthkarshMandloi) to review your proposal. Once approved, they will officially assign the issue to you. You will receive a notification, and your profile picture will appear on the right side of the issue.
+
+![Assignee Section](public/readme/assigned-notifiaction1.png)
+
+![Notification](public/readme/assigned-notifiaction2.png)
+
+---
+
+### Phase 2: The Technical Workflow 💻
+
+Once you have been assigned the issue, it is time to start coding! This phase is divided into two parts: getting the code onto your computer, and submitting your finished work.
+
+#### Part 1: How to Fork, Clone, and Branch
+
+**Step 1: Fork the Repository**
+You cannot edit the original code directly. You need to create a personal copy on your GitHub account. Click the **Fork** button at the top right of this page.
+![Fork Button](public/readme/fork-button.png)
+
+**Step 2: Get Your Clone Link**
+Go to your GitHub profile and open your newly forked repository. Click the green **Code** button and copy the HTTPS URL.
+
+![Code Button](public/readme/code-button.png)
+
+**Step 3: Clone the Repository to Your System**
+Open your terminal and run the clone command using the link you just copied:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/<YOUR-USERNAME>/open-source-guestbook.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Step 4: Navigate into the Folder**
+Move into the project directory:
+```bash
+cd open-source-guestbook
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Step 5: Add the Upstream Remote**
+You need to link your local folder back to the original repository so you can pull any new updates that other people make. Run this command:
+```bash
+git remote add upstream https://github.com/UthkarshMandloi/open-source-guestbook.git
+```
+*Note*: To check if you did this correctly, run `git remote -v`. You should see `origin` (your fork) and `upstream` (the original repo).
+![Upstream Check](public/readme/upstram-check.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Step 6: Create Your Feature Branch**
+Never code on the dev or main branch! Create a new branch using the naming convention `username/feature-name` (e.g., `uthkarsh/dark-mode-card`):
+```bash
+git checkout -b your-username/your-feature
+```
 
-## Learn More
+#### Part 2: How to Code, Push, and Create a Pull Request (PR)
 
-To learn more about Next.js, take a look at the following resources:
+**Step 1: Code and Keep Updated**
+Now, open the code in your editor and build your card! (See [CONTRIBUTOR_GUIDE.md](CONTRIBUTOR_GUIDE.md) for the technical rules).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+*Important Note*: If you are working for a few days, the original repository might change. Keep your branch updated by pulling from the upstream before you finish:
+```bash
+git pull upstream dev
+```
+Step 2: Commit and Push to Your Fork
+Once your card is ready, save your changes, commit them, and push them to your branch on GitHub:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Bash
+git add .
+git commit -m "feat: added [Your Name] trading card"
+git push origin your-username/your-feature
 
-## Deploy on Vercel
+Step 3: Create a Pull Request
+Go back to the original repository (UthkarshMandloi/open-source-guestbook) on GitHub. You will see a green banner asking you to "Compare & pull request" your newly pushed branch. Click it!
+[Insert Screenshot: Highlight the green 'Compare & pull request' banner that appears on GitHub]
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Step 4: Attach the Issue and Submit
+Give your PR a clear title. In the description box, you must link your PR to the issue you were assigned. Type Closes # followed by your issue number (e.g., Closes #5). This automatically links them together!
+[Insert Screenshot 1: Show typing 'Closes #...' and the dropdown menu showing the issue]
+[Insert Screenshot 2: Highlight the green 'Create pull request' button]
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🎉 That's it! Your contribution process is complete.
+Wait for the maintainer to review your PR. If they request changes, make them locally, commit, and push again—the PR will update automatically. Once approved, your code will be merged and your card will go live on the site!

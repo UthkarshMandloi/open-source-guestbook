@@ -128,3 +128,23 @@ service cloud.firestore {
   }
 }
 ```
+
+---
+
+## Contributions & Merged Submissions
+
+Below is the list of active developers whose cards and pages have been successfully merged into the whiteboard board!
+
+![Contributor Grid Screenshot](public/readme/contributor-table.png)
+
+<!-- Scrollable Contributor Container -->
+<div style="max-height: 280px; overflow-y: auto; border: 1px solid rgba(0,0,0,0.15); border-radius: 12px; padding: 12px;">
+
+| Avatar | Contributor | Role | Key Contributions |
+| :---: | :--- | :---: | :--- |
+| <img src="https://github.com/UthkarshMandloi.png" width="48" height="48" style="border-radius: 50%;" /> | [@UthkarshMandloi](https://github.com/UthkarshMandloi) - Uthkarsh Mandloi | Project Lead / Creator | Founded the guestbook project; core layout architecture; Firebase rating system & Dynamic profile rendering integration. |
+| <img src="https://github.com/johndoe-git.png" width="48" height="48" style="border-radius: 50%;" /> | [@johndoe-git](https://github.com/johndoe-git) - John Doe | Junior Dev | Added beginner template components (`TemplateCard` / `TemplateProfile`) and documentation guides. |
+
+</div>
+
+*Once your pull request is approved and merged, you can add your name, github handle, avatar, and contribution details to this list!*

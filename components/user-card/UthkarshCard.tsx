@@ -1,8 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { Sparkles, Trophy, Cpu, Clock, Layers, Star } from "lucide-react";
-import { Github } from "@/components/Icons";
+import { Trophy, Cpu, Clock } from "lucide-react";
 
 export function UthkarshCard() {
   const [avatarUrl, setAvatarUrl] = useState("https://github.com/UthkarshMandloi.png");
@@ -28,7 +27,7 @@ export function UthkarshCard() {
   }, []);
 
   return (
-    <div className="relative w-full min-h-[460px] bg-[#071120] border-[3px] border-[#FFE885] rounded-[2rem] p-4 flex flex-col justify-between overflow-hidden group transition-all duration-500 hover:scale-[1.03] hover:rotate-[0.5deg] shadow-[0_0_15px_rgba(255,232,133,0.3)] hover:shadow-[0_0_25px_rgba(255,232,133,0.65)] select-none">
+    <div className="relative w-full min-h-[460px] bg-[#071120] border-[3px] border-[#FFE885] rounded-[2rem] p-3.5 sm:p-4 flex flex-col justify-between overflow-hidden group transition-all duration-500 hover:scale-[1.03] hover:rotate-[0.5deg] shadow-[0_0_15px_rgba(255,232,133,0.3)] hover:shadow-[0_0_25px_rgba(255,232,133,0.65)] select-none">
       
       {/* Holographic Sheen Overlay */}
       <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out pointer-events-none z-30" />
@@ -130,14 +129,14 @@ export function UthkarshCard() {
       </div>
 
       {/* Stats row with arrows */}
-      <div className="flex gap-2 mt-2 select-none z-10">
-        <div className="flex-1 bg-white/10 border border-white/20 py-1 px-2 text-center rounded-[8px] text-[10px] font-bold text-white uppercase tracking-tighter">
+      <div className="flex gap-1.5 sm:gap-2 mt-2 select-none z-10">
+        <div className="flex-1 bg-white/10 border border-white/20 py-1 px-1 sm:px-2 text-center rounded-[8px] text-[10px] font-bold text-white uppercase tracking-tighter">
           Repos &rarr; <span className="text-[#FFE885]">{gitStats.repos}</span>
         </div>
-        <div className="flex-1 bg-white/10 border border-white/20 py-1 px-2 text-center rounded-[8px] text-[10px] font-bold text-white uppercase tracking-tighter">
+        <div className="flex-1 bg-white/10 border border-white/20 py-1 px-1 sm:px-2 text-center rounded-[8px] text-[10px] font-bold text-white uppercase tracking-tighter">
           Follow &rarr; <span className="text-[#FFE885]">{gitStats.followers}</span>
         </div>
-        <div className="flex-1 bg-white/10 border border-white/20 py-1 px-2 text-center rounded-[8px] text-[10px] font-bold text-white uppercase tracking-tighter">
+        <div className="flex-1 bg-white/10 border border-white/20 py-1 px-1 sm:px-2 text-center rounded-[8px] text-[10px] font-bold text-white uppercase tracking-tighter">
           Stars &rarr; <span className="text-[#FFE885]">48+</span>
         </div>
       </div>

@@ -20,7 +20,7 @@ useEffect(() => {
     });
 }, []);
   return (
-    <div className="group relative w-full min-h-[320px] overflow-hidden rounded-[2rem] border border-purple-400/40 bg-gradient-to-br from-slate-900 via-gray-900 to-purple-950 p-5 shadow-[0_0_25px_rgba(168,85,247,0.35)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(168,85,247,0.6)]">
+    <div className="group relative w-full min-h-[320px] overflow-hidden rounded-[2rem] border border-purple-400/40 bg-gradient-to-br from-slate-900 via-gray-900 to-purple-950 p-4 sm:p-5 shadow-[0_0_25px_rgba(168,85,247,0.35)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(168,85,247,0.6)]">
 
       
       {/* Doodles */}
@@ -56,7 +56,7 @@ useEffect(() => {
 
       {/* Quote */}
       <p className="mt-4 text-sm italic text-gray-400">
-        "Learning, building & creating."
+        &quot;Learning, building &amp; creating.&quot;
       </p>
 
       {/* Tech Tags */}
@@ -103,7 +103,7 @@ useEffect(() => {
           @gouriagrawal06
         </span>
 
-        <span className="rounded-full bg-purple-100 px-2 py-1 text-[10px] font-bold text-purple-700 -translate-x-25">
+        <span className="rounded-full bg-purple-100 px-2 py-1 text-[10px] font-bold text-purple-700">
   Profile →
 </span>
       </div>

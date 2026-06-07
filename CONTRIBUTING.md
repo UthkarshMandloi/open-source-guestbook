@@ -142,6 +142,7 @@ Below is the list of active developers whose cards and pages have been successfu
 | :---: | :--- | :---: | :--- |
 | <img src="https://github.com/UthkarshMandloi.png" width="48" height="48" style="border-radius: 50%;" /> | [@UthkarshMandloi](https://github.com/UthkarshMandloi) - Uthkarsh Mandloi | Project Lead / Creator | Founded the guestbook project; core layout architecture; Firebase rating system & Dynamic profile rendering integration. |
 | <img src="https://github.com/johndoe-git.png" width="48" height="48" style="border-radius: 50%;" /> | [@johndoe-git](https://github.com/johndoe-git) - John Doe | Junior Dev | Added beginner template components (`TemplateCard` / `TemplateProfile`) and documentation guides. |
+| <img src="https://github.com/gouriagrawal-iet.png" width="48" height="48" style="border-radius: 50%;" /> | [@gouriagrawal-iet](https://github.com/gouriagrawal-iet) - Gouri Agrawal | Junior Dev | Added beginner template components (`TemplateCard`). |
 
 </div>
 

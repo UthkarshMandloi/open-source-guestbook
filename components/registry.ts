@@ -3,6 +3,7 @@ import { TemplateCard } from "./user-card/TemplateCard";
 import { TemplateProfile } from "./user-page/TemplateProfile";
 import { UthkarshCard } from "./user-card/UthkarshCard";
 import { UthkarshProfile } from "./user-page/UthkarshProfile";
+import { GouriAgrawalCard } from "./user-card/gouriagrawal-ietCard";
 
 export interface Contributor {
   username: string; // unique slug used in route /profile/[username]
@@ -22,6 +23,14 @@ export const contributors: Contributor[] = [
     cardColor: "#00F0FF", // Electric Cyan
     cardComponent: UthkarshCard,
     pageComponent: UthkarshProfile,
+  },
+  {
+    username: "gouriagrawal",
+    name: "Gouri Agrawal",
+    gitUsername: "gouriagrawal06",
+    cardColor: "#FF69B4", // Hot Pink
+    cardComponent: GouriAgrawalCard,
+    // pageComponent: GouriAgrawalProfile,
   },
   {
     username: "template",
